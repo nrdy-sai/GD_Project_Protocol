@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cm7cc4otwkr2j"]
+
+[ext_resource type="Script" uid="uid://da2u38hsy2keb" path="res://Scripts/key_card.gd" id="1_ws7y3"]
+[ext_resource type="Texture2D" uid="uid://tfij2cfd5514" path="res://Assets/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/keycard_112x160.png" id="2_ws7y3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3dryh"]
+size = Vector2(23.172413, 32.70968)
+
+[node name="KeyCard" type="Area2D" unique_id=2102999798]
+scale = Vector2(0.7, 0.7)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_ws7y3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1588909530]
+position = Vector2(0, -2)
+scale = Vector2(1.5, 1.604)
+texture = ExtResource("2_ws7y3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1009304776]
+position = Vector2(0, -1.687501)
+scale = Vector2(1.8125, 1.9375)
+shape = SubResource("RectangleShape2D_3dryh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

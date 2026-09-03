@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dhkleixph4fiu"]
+
+[ext_resource type="Texture2D" uid="uid://c41ybduf55xfl" path="res://Assets/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/spritesheets/elevator platform-1-34x8.png" id="1_vvyo4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27gba"]
+size = Vector2(32, 8)
+
+[node name="MovingPlatform" type="AnimatableBody2D" unique_id=317434798]
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2048861758]
+texture = ExtResource("1_vvyo4")
+region_enabled = true
+region_rect = Rect2(0.9571245, 8.816935, 32.233574, 7.225069)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=771461913]
+shape = SubResource("RectangleShape2D_27gba")

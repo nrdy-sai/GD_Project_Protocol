@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://buob4a2um2hvm"]
+
+[ext_resource type="Script" uid="uid://bxnahv7waeh0w" path="res://Scripts/level_alert.gd" id="1_dbciw"]
+[ext_resource type="FontFile" uid="uid://mbl51e0p1kj1" path="res://Assets/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/Abandoned Outpost - 16x16 Sci-Fi Platformer Asset Pack/PetitePx.ttf" id="2_6rajv"]
+
+[node name="LevelAlert" type="CanvasLayer" unique_id=1044375716]
+layer = 120
+script = ExtResource("1_dbciw")
+alert_text = "\"LEVEL 1: THE BEGINNING\""
+
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=1242520819]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=789154602]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AlertLabel" type="Label" parent="CenterContainer" unique_id=1649734646]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6rajv")
+theme_override_font_sizes/font_size = 120
+horizontal_alignment = 1
+vertical_alignment = 1

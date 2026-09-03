@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dylx3s2xqqbmp"]
+
+[ext_resource type="PackedScene" uid="uid://duwtt6w3qxejc" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://b6jkb4ge5l1ir" path="res://Scenes/Tutorial_Level.tscn" id="1_i6g32"]
+[ext_resource type="PackedScene" uid="uid://dy1rmmqg8fviy" path="res://Scenes/kill_zone.tscn" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cm7cc4otwkr2j" path="res://Scenes/key_card.tscn" id="4_3dryh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_27gba"]
+size = Vector2(230, 97)
+
+[node name="Game" type="Node2D" unique_id=1777292013]
+
+[node name="Tutorial_Level" parent="." unique_id=1417190669 instance=ExtResource("1_i6g32")]
+
+[node name="KillZone" parent="Tutorial_Level" unique_id=504105413 instance=ExtResource("2_wrm1d")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Tutorial_Level/KillZone" unique_id=1553031859]
+position = Vector2(727, 413.5)
+shape = SubResource("RectangleShape2D_27gba")
+
+[node name="Player" parent="." unique_id=832462430 instance=ExtResource("1_ebmjs")]
+position = Vector2(-1148, -176)
+
+[node name="KeyCard" parent="." unique_id=2102999798 instance=ExtResource("4_3dryh")]
+position = Vector2(370, 184)

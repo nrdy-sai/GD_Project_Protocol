@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bbhfolu2r7fom"]
+
+[ext_resource type="Script" uid="uid://p6ahh153pbdf" path="res://Scenes/scene_transition.gd" id="1_vin40"]
+[ext_resource type="Shader" uid="uid://c53hnr7850yun" path="res://Scripts/diavolo_time_skip.gdshader" id="2_vin40"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_27gba"]
+shader = ExtResource("2_vin40")
+shader_parameter/progress = 0.0
+shader_parameter/glitch_amount = 0.0
+
+[node name="SceneTransition" type="CanvasLayer" unique_id=1022641769]
+script = ExtResource("1_vin40")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=175682200]
+material = SubResource("ShaderMaterial_27gba")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

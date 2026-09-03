@@ -1,0 +1,19 @@
+Enemy 1 (62x33 Pixels):
+- idle
+- walk 
+- attack
+- hit
+- death
+
+Enemy 2 (20x16 Pixels):
+- idle
+- walk 
+- hit
+- hide
+- death
+
+Enemy 3 (32x32 Pixels):
+- idle/move
+- attack
+- hit
+- death
